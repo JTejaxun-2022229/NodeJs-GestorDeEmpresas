@@ -19,17 +19,14 @@ export const companyGet = async (req, res) => {
     let sortQuery = {};
     let searchQuery = {};
 
-    // Ordenamiento
     if (sortBy && sortOrder) {
         sortQuery[sortBy] = sortOrder === 'asc' ? 1 : -1;
     }
 
-    // Búsqueda específica
     if (searchKey) {
         searchQuery = { $or: [{ name: { $regex: new RegExp(searchKey, 'i') } }] };
     }
 
-    // Filtros adicionales
     Object.keys(filters).forEach(key => {
         query[key] = { $regex: new RegExp(filters[key], 'i') };
     });
