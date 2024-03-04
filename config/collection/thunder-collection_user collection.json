@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user collection",
+    "dateExported": "2024-03-04T00:32:30.723Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8e2cbeaa-b9d6-4015-94fd-999a76e3924c",
+            "colId": "54158b86-91fa-401e-99da-89fcf1f05e2d",
+            "containerId": "",
+            "name": "post user",
+            "url": "http://localhost:3000/api/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T00:24:40.347Z",
+            "modified": "2024-03-04T00:26:26.900Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Daniel\",\n  \"email\": \"danieltejaxun@gmail.com\",\n  \"password\": \"hola123\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
