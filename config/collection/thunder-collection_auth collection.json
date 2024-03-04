@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "auth collection",
+    "dateExported": "2024-03-04T00:38:27.314Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ac2707bb-4a54-4b6c-b76e-daf6ed4dcd23",
+            "colId": "6f81cda1-f819-4ebf-bbf0-b2a121ad84c4",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/api/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T00:37:27.705Z",
+            "modified": "2024-03-04T00:38:10.936Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"danieltejaxun@gmail.com\",\n  \"password\": \"hola123\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
