@@ -7,7 +7,8 @@ import { validationFields } from "../middlewares/validation-fields.js";
 const router = Router();
 
 router.post(
-    "/",[
+    "/",
+    [
         check("name", "Name is neccesary").not().isEmpty(),
         check("email", "This is an invalid email").isEmail(),
         check("email").custom(existEmail),
