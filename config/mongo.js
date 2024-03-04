@@ -1,9 +1,9 @@
 'use strict'
 
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 export const dbConnection = async () => {
-    try {
+    try{
         mongoose.connection.on('error', () => {
             console.log('MongoDB | could not be connect to mongodb')
             mongoose.disconnect();
@@ -14,7 +14,7 @@ export const dbConnection = async () => {
         mongoose.connection.on('connected', () => {
             console.log('MongoDB | connected to mongoDB');
         })
-        mongoose.connection.on('open', () => {
+        mongoose.connection.on('open', () =>{
             console.log('MongoDB | connected to database')
         })
         mongoose.connection.on('reconnected', () => {
@@ -29,6 +29,6 @@ export const dbConnection = async () => {
             maxPoolSize: 100
         });
     } catch (e) {
-        console.log('Database connection failed', err)
-    }
-}
+        console.log('Database connection failed', e);
+    };
+};
