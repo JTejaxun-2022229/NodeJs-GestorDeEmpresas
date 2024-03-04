@@ -1,0 +1,92 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "company collection",
+    "dateExported": "2024-03-04T05:20:06.566Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2e6a7632-dc63-4415-bc75-f062328d4e27",
+            "colId": "2ce318d4-65e4-4337-bf67-cbfb7e1cf117",
+            "containerId": "",
+            "name": "post company",
+            "url": "http://localhost:3000/api/v1/companies",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T01:20:31.036Z",
+            "modified": "2024-03-04T05:12:23.471Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MTY1ZTIxYzExMmZlN2I5ZjMzMDciLCJpYXQiOjE3MDk1MjE3NzIsImV4cCI6MTcwOTYwODE3Mn0.sdS7LRSng8u95ms_D1SNop-TL3rilk7w8p22pZ30PtA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Kinal\",\r\n  \"email\": \"kinal@gmail.com\",\r\n  \"address\": \"ciudad de guatemala,zona 10\",\r\n  \"phone\": \"+502 3355-5684\",\r\n  \"category\": \"Educacion\",\r\n  \"impactLevel\": \"medio-alto\",\r\n  \"yearsExperiencie\": \"62\"\r\n} ",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a78d875-e727-43ea-8a31-a5cf6c6eddd1",
+            "colId": "2ce318d4-65e4-4337-bf67-cbfb7e1cf117",
+            "containerId": "",
+            "name": "get company",
+            "url": "http://localhost:3000/api/v1/companies?limit=1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-04T03:08:12.736Z",
+            "modified": "2024-03-04T05:15:49.218Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "5c79d24a-b35e-4841-90d2-410749de98a3",
+            "colId": "2ce318d4-65e4-4337-bf67-cbfb7e1cf117",
+            "containerId": "",
+            "name": "excel company",
+            "url": "http://localhost:3000/api/v1/companies/companyToExcel",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-04T03:37:33.697Z",
+            "modified": "2024-03-04T04:39:13.604Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MTY1ZTIxYzExMmZlN2I5ZjMzMDciLCJpYXQiOjE3MDk1MjcxNDQsImV4cCI6MTcwOTYxMzU0NH0.SJz4Z7XA3qvfLfzhR82P23IdMZ68SVLwbQHYW0MZPww"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f5945e77-b188-4f3e-9aea-95437dac5f0c",
+            "colId": "2ce318d4-65e4-4337-bf67-cbfb7e1cf117",
+            "containerId": "",
+            "name": "get company by a filter",
+            "url": "http://localhost:3000/api/v1/companies?name=kinal",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-04T05:15:12.262Z",
+            "modified": "2024-03-04T05:19:53.353Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "kinal",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
